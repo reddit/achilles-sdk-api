@@ -105,3 +105,12 @@ func (t TypedObjectRef) ToCoreV1ObjectReference() *corev1.ObjectReference {
 func (t TypedObjectRef) String() string {
 	return fmt.Sprintf("%s: %s", t.GroupVersionKind(), t.ObjectKey())
 }
+
+// NamedObjectRef references an object by name and optionally by namespace.
+type NamedObjectRef struct {
+	// Name of the object. Required.
+	Name string `json:"name"`
+
+	// Namespace of the object. Optional. Defaulting behavior is determined by the parent API.
+	Namespace string `json:"namespace,omitempty"`
+}
