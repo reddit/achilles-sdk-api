@@ -1,6 +1,6 @@
 # achilles-sdk-api
 
-API types consumed by [`reddit/achilles-sdk`](https://github.snooguts.net/reddit/achilles-sdk).
+API types consumed by [`reddit/achilles-sdk`](https://github.com/reddit/achilles-sdk).
 
 This repo should minimize dependencies on external Go modules and if it must import external modules, it _must not_ use
 any runtime logic.
